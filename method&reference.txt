@@ -1,0 +1,27 @@
+method
+\item LOF
+\newline
+The key step of the density-based outlier detection method is to assign a dispersion degree to each data point. The main idea is: for a given data set, for any one of the data points, if it is in its local neighborhood If the points are very dense, then this data point is considered to be a normal data point, and an outlier is a data point that is far away from the nearest neighbors of the normal data point. There is usually a threshold to define the distance.
+\newline
+Among various outlier detection methods, the LOF method \cite{Breunig2000} is a typical density-based high-precision outlier detection method. In the LOF method, each data point is assigned an outlier factor LOF that depends on the neighborhood density to determine whether the data point is an outlier. If LOF> 1, then the data point is an outlier; if the LOF is close to 1, then the data point is a normal data point
+
+
+refernce
+@article{Breunig2000,
+    author = {Breunig, Markus M. and Kriegel, Hans-Peter and Ng, Raymond T. and Sander, J\"{o}rg},
+    title = {LOF: Identifying Density-Based Local Outliers},
+    year = {2000},
+    issue_date = {June 2000},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {29},
+    number = {2},
+    issn = {0163-5808},
+    url = {https://doi.org/10.1145/335191.335388},
+    doi = {10.1145/335191.335388},
+    journal = {SIGMOD Rec.},
+    month = may,
+    pages = {93–104},
+    numpages = {12},
+    keywords = {outlier detection, database mining}
+}
